@@ -8,12 +8,12 @@ Title of your repository shall be : team-(your team name)
 
 After forking, fill in your team details below in your fork's README
 
-- **Team Name:**
-- **Team Lead:**
+- **Team Name:** SmarTech Innovators
+- **Team Lead:**Sidra Banu
 - **Team Members:**
-  - Member 1:
-  - Member 2:
-  - Member 3:
+  - Member 1:Syeda Azra Fatima
+  - Member 2:Sarah Begum
+  - Member 3:Sidra Banu
   - Member 4:
 
 ---
@@ -48,7 +48,11 @@ git push origin main
 
 [Write your problem statement here]
 
----
+--- Intelligent Resume and Career Readiness Platform
+Problem Statement:
+Most students apply for jobs with resumes copied from templates, with no real sense of whether
+their profile actually matches what the role requires. The gap between what they present and what
+employers expect is the reason a lot of otherwise capable students get filtered out early
 
 ## Submission Guidelines
 
