@@ -1,16 +1,87 @@
-# React + Vite
+Welcome to the official hackathon repository by [GDG,UCE-OU].
+This repository serves as the starting point for all participating teams.
+Title of your repository shall be : team-(your team name)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Team Details
 
-Currently, two official plugins are available:
+After forking, fill in your team details below in your fork's README
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Team Name:SmarTech Innovators
+- **Team Lead:Sidra Banu
+- **Team Members:
+  - Member 1:Sidra Banu
+  - Member 2:Syeda Azra Fatima
+  - Member 3:Sarah Begum
+  - Member 4:
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Step 1 — Fork this Repository
+- Click the **Fork** button at the top right of this page
+- Select your GitHub account to fork into
+- You will be redirected to your own copy of this repository
+
+### Step 2 — Clone your Fork Locally
+```bash
+git clone https://github.com/
+cd hackathon-repo
+```
+
+### Step 3 — Start Building
+- Work on your project inside your forked repository
+- Commit and push your changes regularly
+
+```bash
+git add .
+git commit -m "Your commit message"
+git push origin main
+```
+
+---
+
+## Problem Statement
+
+3. Intelligent Resume and Career Readiness Platform
+Problem Statement:
+Most students apply for jobs with resumes copied from templates, with no real sense of whether
+their profile actually matches what the role requires. The gap between what they present and what
+employers expect is the reason a lot of otherwise capable students get filtered out early
+
+---
+
+## Description 
+Build a web app where a student uploads their resume and picks a target role. The system pulls out
+their existing skills and stacks them against what that role typically requires, clearly showing what
+they already have, what is missing, and what needs more depth. From that gap analysis, it
+generates a focused learning roadmap with prioritized course recommendations and project ideas. It
+also gives direct feedback on the resume itself, covering structure, keyword gaps, and readability. The goal is to give students both clarity on what to build and the confidence to present what they
+already have.
+
+## Submission Guidelines
+- All code must be pushed to your **forked repository**
+- Your repository must be **public**
+- **Submission Deadline:** [17th april 3:59pm]
+
+---
+
+## 📋 Rules & Regulations
+
+- Use of AI is permitted
+- Use of open source libraries is permitted
+- Plagiarism will lead to immediate disqualification
+- The decision of the judges will be final
+
+---
+## Contact
+
+For any queries, reach out to us at:
+- **contact number** : [7981972900]
+
+---
+
+> Good luck to all participating teams!
+
+
