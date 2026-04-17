@@ -60,6 +60,10 @@ generates a focused learning roadmap with prioritized course recommendations and
 also gives direct feedback on the resume itself, covering structure, keyword gaps, and readability. The goal is to give students both clarity on what to build and the confidence to present what they
 already have.
 
+## Live Demo 
+https://smar-tech-innovators.vercel.app/#roles
+
+
 ## Submission Guidelines
 - All code must be pushed to your **forked repository**
 - Your repository must be **public**
