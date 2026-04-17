@@ -6,13 +6,13 @@ Title of your repository shall be : team-(your team name)
 
 After forking, fill in your team details below in your fork's README
 
-- **Team Name:SmarTech Innovators
-- **Team Lead:Sidra Banu
-- **Team Members:
-  - Member 1:Sidra Banu
-  - Member 2:Syeda Azra Fatima
-  - Member 3:Sarah Begum
-  - Member 4:
+- Team Name:SmarTech Innovators
+- Team Lead:Sidra Banu
+- Team Members:
+  - Member 1: Sidra Banu
+  - Member 2: Syeda Azra Fatima
+  - Member 3: Sarah Begum
+  
 
 ---
 
