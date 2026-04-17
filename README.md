@@ -61,7 +61,7 @@ also gives direct feedback on the resume itself, covering structure, keyword gap
 already have.
 
 ## Live Demo 
-https://smar-tech-innovators.vercel.app/#roles
+https://smar-tech-innovators.vercel.app/#
 
 
 ## Submission Guidelines
