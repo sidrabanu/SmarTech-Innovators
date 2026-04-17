@@ -1,0 +1,198 @@
+/* ===== ABOUT SECTION ===== */
+.about {
+  background: #ffffff;
+  padding: 7rem 2rem;
+}
+
+.about-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 5rem;
+}
+
+/* ===================================================
+   LEFT — IMAGE
+   =================================================== */
+.about-image-wrapper {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.about-image {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  background-image: url('/about-bg.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0, 33, 71, 0.16);
+}
+
+/* Floating accent card overlapping the image bottom-right */
+.about-accent-card {
+  position: absolute;
+  bottom: -1.5rem;
+  right: -1.5rem;
+  background: #ffffff;
+  border: 1.5px solid rgba(0,33,71,0.08);
+  border-radius: 16px;
+  padding: 1rem 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  box-shadow: 0 8px 32px rgba(0,33,71,0.12);
+  animation: card-float 5s ease-in-out infinite alternate;
+}
+
+.accent-icon {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.accent-title {
+  font-family: var(--font);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #002147;
+  line-height: 1.2;
+}
+
+.accent-sub {
+  font-family: var(--font);
+  font-size: 0.8rem;
+  color: #f97316;
+  font-weight: 600;
+}
+
+@keyframes card-float {
+  from { transform: translateY(0px); }
+  to   { transform: translateY(-8px); }
+}
+
+/* ===================================================
+   RIGHT — TEXT CONTENT
+   =================================================== */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about-label {
+  font-family: var(--font);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #f97316;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* Heading — bold Lora, Oxford Blue */
+.about-heading {
+  font-family: 'Lora', Georgia, serif;
+  font-size: clamp(2.4rem, 4vw, 3.2rem);
+  font-weight: 700;
+  color: #002147;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+/* Description */
+.about-description {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.about-para {
+  font-family: 'Lora', Georgia, serif;
+  font-size: clamp(0.95rem, 1.2vw, 1.05rem);
+  font-weight: 400;
+  color: #4a6080;
+  line-height: 1.85;
+}
+
+/* Highlight pills */
+.about-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.highlight-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #002147;
+  background: #f4f7fb;
+  border: 1.5px solid #e0e8f2;
+  padding: 0.45rem 1.1rem;
+  border-radius: 50px;
+  transition: border-color 0.2s, background 0.2s, transform 0.2s;
+  cursor: default;
+}
+
+.highlight-pill:hover {
+  border-color: #f97316;
+  background: #fff7f0;
+  transform: translateY(-2px);
+}
+
+.highlight-icon {
+  font-size: 1rem;
+}
+
+.highlight-label {
+  white-space: nowrap;
+}
+
+/* ===== DECORATIVE LEFT BORDER LINE ===== */
+.about-description {
+  border-left: 3px solid rgba(249,115,22,0.25);
+  padding-left: 1.5rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .about-inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .about-image {
+    aspect-ratio: 16 / 9;
+  }
+
+  .about-accent-card {
+    right: 1rem;
+    bottom: -1rem;
+  }
+
+  .about-description {
+    border-left: none;
+    padding-left: 0;
+    text-align: left;
+  }
+
+  .about-highlights {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: 4rem 1.25rem;
+  }
+
+  .about-heading {
+    font-size: 2rem;
+  }
+}

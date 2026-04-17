@@ -1,0 +1,299 @@
+/* ===== HERO SECTION ===== */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: var(--nav-height);
+  overflow: hidden;
+  background: #ffffff;
+}
+
+/* ===== INNER LAYOUT: two columns ===== */
+.hero-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 4rem;
+}
+
+/* ===================================================
+   LEFT COLUMN — white, Oxford Blue text
+   =================================================== */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+/* Badge */
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: rgba(249, 115, 22, 0.08);
+  border: 1px solid rgba(249, 115, 22, 0.3);
+  padding: 0.4rem 1.1rem;
+  border-radius: 50px;
+  width: fit-content;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.badge-dot {
+  width: 7px;
+  height: 7px;
+  background: var(--accent);
+  border-radius: 50%;
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50%       { transform: scale(1.6); opacity: 0.5; }
+}
+
+/* Headline — bold Oxford Blue, Lora */
+.hero-headline {
+  font-family: 'Lora', Georgia, serif;
+  font-size: clamp(2.2rem, 3.8vw, 3.4rem);
+  font-weight: 700;
+  color: #002147;
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+}
+
+/* Subheadline */
+.hero-sub {
+  font-family: 'Lora', Georgia, serif;
+  font-size: clamp(0.97rem, 1.3vw, 1.07rem);
+  font-weight: 400;
+  color: #4a6080;
+  line-height: 1.8;
+}
+
+/* CTA Row */
+.hero-cta-row {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.btn-get-started {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font);
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(135deg, #f97316 0%, #e85d04 100%);
+  border: none;
+  padding: 0.9rem 2.2rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 4px 20px rgba(249,115,22,0.35);
+  letter-spacing: 0.01em;
+}
+
+.btn-get-started:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 35px rgba(249,115,22,0.45);
+}
+
+.btn-get-started svg {
+  transition: transform 0.25s ease;
+}
+
+.btn-get-started:hover svg {
+  transform: translateX(4px);
+}
+
+/* Upload Resume hero button */
+.btn-upload-hero {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font);
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(135deg, #f97316 0%, #e85d04 100%);
+  border: none;
+  padding: 0.9rem 2.2rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 4px 20px rgba(249,115,22,0.35);
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+
+.btn-upload-hero:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 35px rgba(249,115,22,0.45);
+}
+
+.btn-demo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--oxford-blue);
+  background: transparent;
+  border: 1.5px solid rgba(0,33,71,0.2);
+  padding: 0.85rem 1.6rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: border-color 0.25s ease, background 0.25s ease, transform 0.25s ease;
+}
+
+.btn-demo:hover {
+  border-color: var(--oxford-blue);
+  background: rgba(0,33,71,0.05);
+  transform: translateY(-2px);
+}
+
+/* ===================================================
+   SKILL CHIPS — below CTA in empty left space
+   =================================================== */
+.skills-cloud {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-top: 0.25rem;
+}
+
+.skills-label {
+  font-family: var(--font);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #a0b0c0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.skill-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--font);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #002147;
+  background: #f4f7fb;
+  border: 1.5px solid #e0e8f0;
+  padding: 0.3rem 0.85rem;
+  border-radius: 50px;
+  white-space: nowrap;
+  cursor: default;
+  animation: chip-fade-in 0.5s ease both, chip-float 5s ease-in-out infinite alternate;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, transform 0.2s ease;
+}
+
+.skill-chip:hover {
+  border-color: #f97316;
+  background: #fff7f0;
+  box-shadow: 0 2px 12px rgba(249,115,22,0.2);
+  transform: translateY(-2px);
+}
+
+.chip-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+@keyframes chip-fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes chip-float {
+  from { transform: translateY(0px); }
+  to   { transform: translateY(-4px); }
+}
+
+/* ===================================================
+   RIGHT COLUMN — clean image, no animation
+   =================================================== */
+.hero-visual {
+  position: relative;
+  height: 560px;
+  width: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 24px 64px rgba(0,33,71,0.18);
+}
+
+/* Background image fills the right column */
+.visual-image {
+  position: absolute;
+  inset: 0;
+  background-image: url('/hero-bg.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 24px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .hero-inner {
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+    padding: 3rem 1.5rem;
+    text-align: center;
+  }
+
+  .hero-badge {
+    margin: 0 auto;
+  }
+
+  .hero-cta-row {
+    justify-content: center;
+  }
+
+  .skills-grid {
+    justify-content: center;
+  }
+
+  .hero-visual {
+    height: 360px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-visual {
+    height: 260px;
+    border-radius: 16px;
+  }
+
+  .hero-headline {
+    font-size: 1.9rem;
+  }
+}
